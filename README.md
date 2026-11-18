@@ -72,19 +72,43 @@ LawDiver is a free legal research platform offering a Westlaw and Lexis alternat
 
 Everything profiled for LawDiver is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lawdiver-com/](https://apis.io/providers/lawdiver-com/)** — or go straight to one of the APIs or properties below.
 
-### APIs (1)
+### APIs (2)
 
 - [LawDiver API](https://apis.io/apis/lawdiver-com/lawdiver-api/) — LawDiver API v1 provides case search, citation resolution, and other legal research endpoints.
+- [LawDiver API](https://apis.io/apis/lawdiver-com/lawdiver-com-api/) — LawDiver API as documented publicly: 25 operations. Contract generated from the documentation by API Evangelist (2026-11-18); not the provider's own document.
 
 ### Published properties
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [lawdiver-com-mcp.yml](https://apis.io/servers/lawdiver-com/lawdiver-com-mcp-yml/)
+
 #### Agentic access (1)
 
 Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Lawdiver Com Agentic Access](https://apis.io/agentic-access/lawdiver-com/lawdiver-com-agentic-access/)
+- [LawDiver Agentic Access](https://apis.io/agentic-access/lawdiver-com/lawdiver-com-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [GetApiV1CasesIdGoodlawCheckResponse](https://apis.io/schemas/lawdiver-com/lawdiver-com-get-api-v1-cases-id-goodlaw-check-response/)
+- [GetApiV1CasesIdResponse](https://apis.io/schemas/lawdiver-com/lawdiver-com-get-api-v1-cases-id-response/)
+- [GetApiV1CitecheckJobsIdResponse](https://apis.io/schemas/lawdiver-com/lawdiver-com-get-api-v1-citecheck-jobs-id-response/)
+- [PostApiV1CitationsResolveResponse](https://apis.io/schemas/lawdiver-com/lawdiver-com-post-api-v1-citations-resolve-response/)
+- [PostApiV1CitecheckDocumentResponse](https://apis.io/schemas/lawdiver-com/lawdiver-com-post-api-v1-citecheck-document-response/)
+- [PostSearchRequest](https://apis.io/schemas/lawdiver-com/lawdiver-com-post-search-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Lawdiver Com Context](https://apis.io/jsonld/lawdiver-com/lawdiver-com-context/)
 
 #### Governance rules (1)
 
@@ -96,14 +120,26 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Lawdiver Com Authentication](https://apis.io/security/lawdiver-com/lawdiver-com-authentication/)
-- [Lawdiver Com Domain Security](https://apis.io/security/lawdiver-com/lawdiver-com-domain-security/)
+- [LawDiver Authentication](https://apis.io/security/lawdiver-com/lawdiver-com-authentication/)
+- [LawDiver Domain Security](https://apis.io/security/lawdiver-com/lawdiver-com-domain-security/)
 
 #### OAuth scopes (1)
 
 The permissions the API asks for.
 
-- [Lawdiver Com Scopes](https://apis.io/scopes/lawdiver-com/lawdiver-com-scopes/)
+- [LawDiver Scopes](https://apis.io/scopes/lawdiver-com/lawdiver-com-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [LawDiver Plans Pricing](https://apis.io/plans/lawdiver-com/lawdiver-com-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [LawDiver Rate Limits](https://apis.io/rate-limits/lawdiver-com/lawdiver-com-rate-limits/)
 
 ## Where to find this API
 
@@ -122,22 +158,22 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 38.0** — thin · rubric 0.25.0 · scored 2026-10-29
+**Kin Score 61.0** — strong · rubric 0.27.0 · scored 2026-11-18
 
 | Facet | Score |
 |---|---|
-| Discoverability | 65.0 |
-| Contract quality | 0.0 |
-| Contract governance | 57.3 |
-| Operational transparency | 10.5 |
-| Developer ergonomics | 57.1 |
-| Access clarity | 44.7 |
+| Discoverability | 66.7 |
+| Contract quality | 45.6 |
+| Contract governance | 79.1 |
+| Operational transparency | 38.9 |
+| Developer ergonomics | 63.6 |
+| Access clarity | 63.7 |
 
-**Agent readiness 31.2** — agent-ready
+**Agent readiness 49.9** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
-| Spec Presence | — |
+| Spec Presence | yes |
 | Agentic Access | unknown |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
@@ -145,9 +181,9 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Idempotency | — |
 | Error Semantics | documented (partial credit) |
 | OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | — |
-| Agent Skills | — |
+| Agent Skills | unknown |
 | Well Known Catalog | — |
 | Consent Identity | — |
 | Agent Card | — |
@@ -158,6 +194,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Agentic Commerce | — |
 | Pagination Ratio | na |
 | Operation Distinctiveness | na |
+| MCP Tool Quality | na |
 
 **Regulatory alignment 34.3** — Horizontal (data, software, accessibility, platform)
 
